@@ -16,15 +16,41 @@ export default function Home() {
       </section>
 
       {/* Courses Offered Section */}
-      <section className="py-12 px-4 bg-gray-200">
+      <section className="py-12 px-4 bg-white">
         <h2 className="text-3xl font-bold text-center">Courses Offered</h2>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Example Course Card */}
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Beginner Courses */}
           <div className="bg-white p-4 rounded shadow">
-            <h3 className="text-xl font-semibold">Intro to Web Development</h3>
-            <p className="mt-2">Learn the basics of HTML, CSS, and JavaScript.</p>
+            <img
+              src="/images/beginner-course-image.jpg"
+              alt="Beginner Courses"
+              className="w-full h-auto object-contain rounded"
+            />
+            <h3 className="text-xl font-semibold mt-4 text-center">Beginner Courses</h3>
+            <p className="mt-2 text-center">Learn basic coding skills</p>
           </div>
-          {/* Add more courses similarly */}
+
+          {/* Advanced Courses */}
+          <div className="bg-white p-4 rounded shadow">
+            <img
+              src="../images/advanced-course-image.jpg"
+              alt="Advanced Courses"
+              className="w-full h-auto object-contain rounded"
+            />
+            <h3 className="text-xl font-semibold mt-4 text-center">Advanced Courses</h3>
+            <p className="mt-2 text-center">Enhance your expertise</p>
+          </div>
+
+          {/* Workshops */}
+          <div className="bg-white p-4 rounded shadow">
+            <img
+              src="../images/workshops-image.jpg"
+              alt="Workshops"
+              className="w-full h-auto object-contain rounded"
+            />
+            <h3 className="text-xl font-semibold mt-4 text-center">Workshops</h3>
+            <p className="mt-2 text-center">Workshops focus on specific topics</p>
+          </div>
         </div>
       </section>
 
