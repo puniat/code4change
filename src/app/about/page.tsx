@@ -40,7 +40,7 @@ const tutors = [
 const tutorAnnouncement = {
   title: "Join Our Teaching Team!",
   message: "We're looking for passionate volunteer tutors to join our mission of teaching coding to young minds.",
-  //contact: "Contact using Email: code4achange@gmail.com",
+  contact: "Contact using Email: code4achange@gmail.com",
   note: "Share your skills and make a difference in children's lives."
 }
 
@@ -128,7 +128,7 @@ export default function AboutPage() {
           <div className="bg-card rounded-lg p-6 shadow-sm">
             <h3 className="text-xl font-semibold">{tutorAnnouncement.title}</h3>
             <p className="mt-2 text-muted-foreground">{tutorAnnouncement.message}</p>
-            <p className="mt-2 text-sm">{tutorAnnouncement.contact}</p>
+            {/* <p className="mt-2 text-sm">{tutorAnnouncement.contact}</p> */}
             <p className="mt-2 text-sm">{tutorAnnouncement.note}</p>
           </div>
         </section>
