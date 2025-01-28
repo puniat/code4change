@@ -124,6 +124,51 @@ export default function AboutPage() {
             <p className="mt-2 text-sm">{tutorAnnouncement.note}</p>
           </div>
         </section>
+
+        {/* Contact Section */}
+        <section className="py-16 bg-gradient-to-b from-background to-muted/20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-2xl mx-auto text-center">
+              <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
+              <p className="text-muted-foreground mb-8">
+                Have questions? Want to join our mission? We'd love to hear from you!
+              </p>
+              
+              <div className="bg-card p-8 rounded-lg shadow-lg">
+                <div className="flex flex-col items-center gap-4">
+                  <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <svg
+                      className="h-6 w-6 text-primary"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  
+                  <div className="text-center">
+                    <h3 className="text-xl font-semibold mb-2">Email Us</h3>
+                    <a 
+                      href="mailto:code4achange@gmail.com"
+                      className="text-primary hover:text-primary/80 transition-colors duration-200"
+                    >
+                      code4achange@gmail.com
+                    </a>
+                  </div>
+
+                  <p className="text-sm text-muted-foreground mt-4">
+                    Whether you're interested in learning, teaching, or collaborating, 
+                    we're here to help make coding education accessible to all.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   )

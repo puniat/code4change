@@ -39,10 +39,20 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <nav className="border-b relative">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-primary">Code4Change</h1>
+        <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+          <div className="flex items-center gap-6">
+            {/* <Image
+              src="/images/Logo-4.png"
+              alt="Code4Change Logo"
+              width={80}
+              height={80}
+              className="rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
+              priority
+            /> */}
+            <h1 className="text-2xl font-bold text-primary">Code4Change</h1>
+          </div>
           <div className="flex items-center gap-4">
-          <Link href="/about">
+            <Link href="/about">
               <Button variant="ghost">About</Button>
             </Link>
             <Link href="/courses">
@@ -135,17 +145,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-b from-background to-muted/20">
+      {/* Compact Learning Stories Section */}
+      <section className="py-12 bg-muted/50">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-4xl font-bold mb-4">Learning Stories</h2>
-            <p className="text-muted-foreground">Join our growing community of young coders and parents</p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            {/* Feedback Form */}
-            <div className="bg-card p-8 rounded-lg shadow-lg mb-12">
-              <h3 className="text-2xl font-semibold mb-6">Share Your Experience</h3>
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-3">Learning Stories</h2>
+            <p className="text-muted-foreground text-center mb-8">Share your coding journey with us</p>
+            
+            <div className="bg-card p-6 rounded-lg shadow-sm">
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-2 gap-4">
                   <input 
@@ -154,13 +161,13 @@ export default function Home() {
                     placeholder="Your Name"
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    className="p-3 rounded-md border bg-background/50"
+                    className="p-2.5 rounded-md border bg-background/50"
                   />
                   <select 
                     required
                     value={formData.grade}
                     onChange={(e) => setFormData({...formData, grade: e.target.value})}
-                    className="p-3 rounded-md border bg-background/50"
+                    className="p-2.5 rounded-md border bg-background/50"
                   >
                     <option value="">Select Grade</option>
                     {[...Array(8)].map((_, i) => (
@@ -174,20 +181,52 @@ export default function Home() {
                   placeholder="Share your coding journey..."
                   value={formData.feedback}
                   onChange={(e) => setFormData({...formData, feedback: e.target.value})}
-                  className="w-full p-3 rounded-md border bg-background/50 h-32"
+                  className="w-full p-2.5 rounded-md border bg-background/50 h-24"
                 />
-                <Button 
-                  type="submit" 
-                  className="w-full py-6" 
-                  disabled={isSubmitting}
-                >
+                <Button type="submit" className="w-full" disabled={isSubmitting}>
                   {isSubmitting ? 'Submitting...' : 'Share Your Story'}
                 </Button>
               </form>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Testimonials */}
-            <TestimonialsScroll />
+      {/* Contact Section */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-3">Get in Touch</h2>
+            <p className="text-muted-foreground mb-6">Have questions? We'd love to hear from you!</p>
+            
+            <div className="bg-card p-6 rounded-lg shadow-sm">
+              <div className="flex flex-col items-center gap-4">
+                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <svg
+                    className="h-5 w-5 text-primary"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                
+                <a 
+                  href="mailto:code4achange@gmail.com"
+                  className="text-primary hover:text-primary/80 transition-colors duration-200 font-medium"
+                >
+                  code4achange@gmail.com
+                </a>
+
+                <p className="text-sm text-muted-foreground">
+                  Reach out for learning opportunities or collaboration.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
