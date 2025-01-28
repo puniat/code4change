@@ -14,7 +14,7 @@ const courses = [
     level: "Beginner",
     //duration: "8 weeks",
     topics: ["HTML5", "CSS3", "JavaScript Basics", "Images", "Personal Website Design"],
-    curriculum: "Curriculum details coming soon. Please check back later!"
+    curriculum: "Exciting updates coming soon! We're working on the curriculum for Summer 2025 program. Sign up now to receive notifications and be the first to know!!"
     /* curriculum: [
       { week: "Week 1-2", content: "HTML5 Fundamentals, Document Structure" },
       { week: "Week 3-4", content: "CSS3 Styling, Layouts" },
@@ -29,7 +29,7 @@ const courses = [
     level: "Intermediate", 
     duration: "10 weeks",
     topics: ["Introduction to Python", "Syntax and Structure", "Control Flow & Functions", "Collections & Error Handling", "Fun Games & Projects"],
-    curriculum: "Curriculum details coming soon. Please check back later!"
+    curriculum: "Exciting updates coming soon! We're working on the curriculum for Summer 2025 program. Sign up now to receive notifications and be the first to know!!"
     /* curriculum: [
       {
         week: "Week 1-2",
@@ -55,7 +55,7 @@ const courses = [
     description: "Where coding, creativity, and the thrill of exploring new technologies collide in a fun-filled, engaging one-hour session!",
     level: "Beginner",
     topics: ["Hour Of Code", "Workshops", "Technical Talks", "Fun Activities", "AI and GenAI"],
-    curriculum: "Curriculum details coming soon. Please check back later!"
+    curriculum: "We're working on the first few sessions. Enroll to stay updated!"
    /* curriculum: [
       {
         week: "Week 1-2",

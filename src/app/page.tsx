@@ -39,26 +39,28 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <nav className="border-b relative">
-        <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-          <div className="flex items-center gap-4">
-            { <Image
-              src="/images/Logo-61.png"
-              alt="Code4Change Logo"
-              width={70}
-              height={70}
-              className="rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
-              priority
-            /> }
-            <h1 className="text-2xl font-bold text-primary">Code4Change</h1>
-          </div>
-          <div className="flex items-center gap-4">
-            <Link href="/about">
-              <Button variant="ghost">About</Button>
-            </Link>
-            <Link href="/courses">
-              <Button variant="ghost">Courses</Button>
-            </Link>
-            <ModeToggle />
+        <div className="container mx-auto px-4 py-2">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div className="flex items-center gap-4">
+              <Image
+                src="/images/Logo-61.png"
+                alt="Code4Change Logo"
+                width={70}
+                height={70}
+                className="rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
+                priority
+              />
+              <h1 className="hidden sm:block text-2xl font-bold text-primary">Code4Change</h1>
+            </div>
+            <div className="flex items-center gap-4">
+              <Link href="/about">
+                <Button variant="ghost" size="sm" className="sm:size-md">About</Button>
+              </Link>
+              <Link href="/courses">
+                <Button variant="ghost" size="sm" className="sm:size-md">Courses</Button>
+              </Link>
+              <ModeToggle />
+            </div>
           </div>
         </div>
       </nav>
@@ -89,6 +91,14 @@ export default function Home() {
           <p className="text-center text-muted-foreground mb-12">
             Courses and hourly sessions are designed for grades 4-8 students (ages 9-13)
           </p>
+          {/* Summer Registration Banner */}
+          <div className="bg-gradient-to-r from-purple-500/10 via-blue-500/10 to-purple-500/10 py-4 rounded-lg mb-8">
+            <p className="text-center font-bold text-lg">
+              <span className="animate-shimmer inline-block">
+                🌟 Registration Open for Summer 2025 Program! Limited Spots Available 🌟
+              </span>
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {

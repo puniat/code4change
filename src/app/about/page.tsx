@@ -40,7 +40,7 @@ const tutors = [
 const tutorAnnouncement = {
   title: "Join Our Teaching Team!",
   message: "We're looking for passionate volunteer tutors to join our mission of teaching coding to young minds.",
-  contact: "Contact using Email: code4achange@gmail.com",
+  //contact: "Contact using Email: code4achange@gmail.com",
   note: "Share your skills and make a difference in children's lives."
 }
 
