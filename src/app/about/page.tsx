@@ -15,7 +15,7 @@ const founders = [
   {
     name: "Dhruv Punia",
     role: "Co-Founder & Tech Specialist ",
-    image: "/founders/Dhruv-Punia.jpg",
+    image: "/founders/Dhruv-Punia.JPG",
     bio: "A middle school student passionate about coding, robotics and game design. Active in FIRST LEGO League robotics and REC Foundation Aerial Drone competitions, he enjoys coding, playing video games, and loves learning new things to share with others.",
     journey: "Passionate about bringing tech and robotics education to young students and promoting STEM learning."
   }
