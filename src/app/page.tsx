@@ -40,15 +40,15 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <nav className="border-b relative">
         <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-          <div className="flex items-center gap-6">
-            {/* <Image
-              src="/images/Logo-4.png"
+          <div className="flex items-center gap-4">
+            { <Image
+              src="/images/Logo-61.png"
               alt="Code4Change Logo"
-              width={80}
-              height={80}
+              width={70}
+              height={70}
               className="rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
               priority
-            /> */}
+            /> }
             <h1 className="text-2xl font-bold text-primary">Code4Change</h1>
           </div>
           <div className="flex items-center gap-4">
@@ -111,7 +111,7 @@ export default function Home() {
                 id: "code-connect",
                 title: "Code & Connect Hour",
                 description: "Where coding, creativity, and the thrill of exploring new technologies collide in a fun-filled, engaging one-hour session!",
-                level: "Beginner",
+                //level: "Beginner",
                 grades: "Grades 4-8",
                 duration: "1 hour sessions"
               }

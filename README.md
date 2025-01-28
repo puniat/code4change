@@ -29,8 +29,10 @@ Code4Change offers free coding courses designed for elementary and middle school
 git clone https://github.com/puniat/code4change.git
 cd code4change
 ```
+Run application locally 
+npm run dev 
 
-2. Update changes in Github
+2. Commit changes in Github Repository
 # Initialize git and add files
 ```bash
 cd D:\Development\personal\code4change
