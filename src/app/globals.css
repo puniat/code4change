@@ -112,6 +112,7 @@
     theme('colors.purple.500') 100%
   );
   background-size: 1000px 100%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shimmer 10s linear infinite;
