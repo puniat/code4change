@@ -120,7 +120,7 @@ export default function Home() {
               {
                 id: "ai-basics",
                 title: "Artificial Intelligence",
-                description: "Explore the fascinating world of Artificial Intelligence! Learn about machine learning, neural networks, and create your own AI projects using kid-friendly tools.",
+                description: "Learn the basics of machine learning through fun, interactive projects using AI applications and technologies!",
                 level: "Beginner",
                 grades: "Grades 6-8",
                 duration: "6-10 weeks",

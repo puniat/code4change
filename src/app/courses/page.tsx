@@ -50,9 +50,9 @@ const courses = [
     ] */
   },
   {
-    title: "Explore Artificial Intelligence",
+    title: "Artificial Intelligence",
     formUrl: "https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?usp=pp_url&entry.123456789=AI+Basics",
-    description: "Explore the fascinating world of Artificial Intelligence! Learn about machine learning, neural networks, and create your own AI projects using kid-friendly tools.",
+    description: "Learn the basics of machine learning through fun, interactive projects using AI applications and technologies!",
     level: "Beginner",
     topics: ["Introduction to AI", "Machine Learning Basics", "Fun AI Projects"],
     curriculum: "Curriculum details coming soon. Please check back later!"
