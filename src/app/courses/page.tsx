@@ -50,6 +50,14 @@ const courses = [
     ] */
   },
   {
+    title: "Explore Artificial Intelligence",
+    formUrl: "https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?usp=pp_url&entry.123456789=AI+Basics",
+    description: "Explore the fascinating world of Artificial Intelligence! Learn about machine learning, neural networks, and create your own AI projects using kid-friendly tools.",
+    level: "Beginner",
+    topics: ["Introduction to AI", "Machine Learning Basics", "Fun AI Projects"],
+    curriculum: "Curriculum details coming soon. Please check back later!"
+  },
+  {
     title: "Code & Connect Hour",
     formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdgoB-R0KKolYhV2IqM5yE3gxhA2ngY9AcQ5JfdYdXTjIWA5A/viewform?usp=pp_url&entry.123456789=Code+and+Connect+Hour",
     description: "Where coding, creativity, and the thrill of exploring new technologies collide in a fun-filled, engaging one-hour session!",
@@ -75,6 +83,7 @@ const courses = [
       }
     ] */
   }
+
 ]
 
 export default function CoursesPage() {

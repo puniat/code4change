@@ -61,3 +61,8 @@ This project is deployed on Vercel. Visit the live site at [code4change.vercel.a
 ```bash
 npm i -g vercel
 ```
+
+https://www.teentokinc.com/projects-3
+
+AI - https://projects.raspberrypi.org/en/collections/artificial_intelligence
+Python - https://projects.raspberrypi.org/en/collections/python

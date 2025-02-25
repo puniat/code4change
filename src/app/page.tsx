@@ -118,6 +118,14 @@ export default function Home() {
                 duration: "6-10 weeks"
               },
               {
+                id: "ai-basics",
+                title: "Artificial Intelligence",
+                description: "Explore the fascinating world of Artificial Intelligence! Learn about machine learning, neural networks, and create your own AI projects using kid-friendly tools.",
+                level: "Beginner",
+                grades: "Grades 6-8",
+                duration: "6-10 weeks",
+              },
+              {
                 id: "code-connect",
                 title: "Code & Connect Hour",
                 description: "Where coding, creativity, and the thrill of exploring new technologies collide in a fun-filled, engaging one-hour session!",
@@ -128,7 +136,7 @@ export default function Home() {
             ].map((course, index) => (
               <div key={index} className="bg-background rounded-lg p-6 shadow-sm relative overflow-hidden">
                 {/* FREE badge */}
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+                <div className="absolute top-4 right-4">
                   <span className="bg-primary text-primary-foreground text-xs font-bold px-2 py-1 rounded-full">
                     FREE
                   </span>
