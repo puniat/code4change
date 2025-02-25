@@ -61,7 +61,7 @@ This project is deployed on Vercel. Visit the live site at [code4change.vercel.a
 ```bash
 npm i -g vercel
 ```
-Course to Refer
+Course to Refer for exercise
 
 https://www.teentokinc.com/projects-3
 
