@@ -51,7 +51,7 @@ const courses = [
   },
   {
     title: "Artificial Intelligence",
-    formUrl: "https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?usp=pp_url&entry.123456789=AI+Basics",
+    formUrl: "https://docs.google.com/forms/d/1PD0tQD_mvleoJ4CRbL7gE3cxOlVRBS_Dbq8k8Oyh518/viewform?usp=pp_url&entry.123456789=AI+Basics",
     description: "Learn the basics of machine learning through fun, interactive projects using AI applications and technologies!",
     level: "Beginner",
     topics: ["Introduction to AI", "Machine Learning Basics", "Fun AI Projects"],
