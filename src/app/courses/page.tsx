@@ -106,15 +106,7 @@ export default function CoursesPage() {
   return (
     <main className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8">
-        <div className="mb-8">
-          <Link href="/">
-            <Button variant="ghost" className="gap-2">
-              <ChevronLeft className="h-4 w-4" />
-              Back to Home
-            </Button>
-          </Link>
-        </div>
-        
+       
         <h1 className="text-4xl font-bold mb-8">Our Courses</h1>
         
         <div className="grid gap-8">

@@ -70,4 +70,5 @@ Python - https://projects.raspberrypi.org/en/collections/python
 
 AI for Highschool - https://adacomputerscience.org/
 Workshop - https://adacomputerscience.org/pages/20250228_online_workshop_trainee_teachers
+https://www.microsoft.com/en-us/makecode?rtc=1
 

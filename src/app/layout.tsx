@@ -1,13 +1,15 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { Toaster } from "sonner"
+import { Navigation } from "@/components/navigation" // Add this import
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: 'Code4Change - Learn Programming',
-  description: 'A platform for students to learn programming and make a difference',
+  title: "Code4Change",
+  description: "Learn coding and make a difference",
 }
 
 export default function RootLayout({
@@ -24,7 +26,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Navigation /> {/* Add Navigation component here */}
           {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
