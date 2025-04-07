@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 interface CtaBannerProps {
   title?: string;
@@ -47,6 +48,14 @@ export function CtaBanner({
         <p className="mt-6 text-sm opacity-80">
           Questions? Email us at <a href="mailto:code4achange@gmail.com" className="underline hover:no-underline">code4achange@gmail.com</a>
         </p>
+        <div className="flex justify-center gap-4 mt-4">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <FaInstagram size={20} />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <FaLinkedin size={20} />
+            </a>
+          </div>
       </div>
     </section>
   )

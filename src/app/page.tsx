@@ -9,6 +9,7 @@ import { CtaBanner } from "@/components/cta-banner"
 import { TestimonialsScroll } from '@/components/testimonials-scroll';
 import Image from 'next/image';
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { SiPython } from 'react-icons/si';
 
 export default function Home() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -37,6 +38,26 @@ export default function Home() {
     }
   };
 
+  const getCardClass = (color) => {
+    const classes = {
+      'blue': 'bg-blue-50 dark:bg-blue-900/30',
+      'green': 'bg-green-50 dark:bg-green-900/30',
+      'purple': 'bg-purple-50 dark:bg-purple-900/30',
+      'amber': 'bg-amber-50 dark:bg-amber-900/30'  // Replaced indigo with amber
+    };
+    return classes[color] || 'bg-card';
+  };
+
+  const getButtonClass = (color) => {
+    const classes = {
+      'blue': 'bg-blue-600 hover:bg-blue-700 text-white',
+      'green': 'bg-green-600 hover:bg-green-700 text-white',
+      'purple': 'bg-purple-600 hover:bg-purple-700 text-white',
+      'amber': 'bg-amber-600 hover:bg-amber-700 text-white'  // Amber button styling
+    };
+    return classes[color] || 'bg-primary hover:bg-primary/90 text-white';
+  };
+
   return (
     <main className="min-h-screen bg-background py-16">
       <div className="container mx-auto px-4">
@@ -50,7 +71,7 @@ export default function Home() {
           </p>
           <Link href="/courses">
             <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-6">
-              📥 Register for Summer 2025 – It’s Free!
+              Register for Summer 2025 – It’s Free!
             </Button>
           </Link>
         </div>
@@ -72,10 +93,10 @@ export default function Home() {
                 color: 'blue'
               },
               {
-                icon: '🐍',
-                title: 'Python Basics for Young Innovators',
-                desc: 'Take your first steps into Python and unlock your potential to innovate and make a difference.',
-                age: 'Grades 6–8',
+                icon: <SiPython size={45} className="text-green-600" />,
+                title: 'Python for Young Innovators',
+                desc: 'Explore Python from the ground up — no experience needed, just curiosity and creativity!',
+                age: 'Grades 5–8',
                 duration: '6–10 weeks',
                 href: '/courses?course=python',
                 color: 'green'
@@ -96,10 +117,10 @@ export default function Home() {
                 age: 'Grades 4–8',
                 duration: '1 hour per session',
                 href: '/courses?course=code-connect',
-                color: 'indigo'
+                color: 'amber'  // Changed from 'indigo' to 'amber'
               }
             ].map((course, idx) => (
-              <div key={idx} className={`p-6 rounded-xl border shadow-sm bg-${course.color}-50 dark:bg-${course.color}-900/30`}>
+              <div key={idx} className={`p-6 rounded-xl border shadow-sm ${getCardClass(course.color)}`}>
                 <div className="flex items-center gap-4 mb-4">
                   <div className="text-5xl">{course.icon}</div>
                   <div>
@@ -111,7 +132,7 @@ export default function Home() {
                   <span>{course.age}</span> • <span>{course.duration}</span>
                 </div>
                 <Link href={course.href}>
-                  <Button className={`bg-${course.color}-600 hover:bg-${course.color}-700 text-white`}>Register Now</Button>
+                  <Button className={getButtonClass(course.color)}>Register Now</Button>
                 </Link>
               </div>
             ))}
@@ -148,14 +169,14 @@ export default function Home() {
           </div>
         </section>
 
-        {/* FAQ CTA */}
+        {/* FAQ CTA
         <section className="mb-20 text-center">
           <h2 className="text-3xl font-bold mb-4">Got Questions?</h2>
           <p className="text-muted-foreground mb-6">Visit our FAQ to learn about scheduling, support, and more.</p>
           <Link href="/faq">
             <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 text-white">View FAQ</Button>
           </Link>
-        </section>
+        </section> */}
 
         {/* Learning Stories (Testimonials) */}
         <section className="mb-20">
@@ -188,16 +209,15 @@ export default function Home() {
               <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/30 dark:to-purple-950/30 p-6 rounded-xl border border-blue-200/30 dark:border-blue-800/30">
                 <h3 className="text-xl font-semibold mb-4">Featured Stories</h3>
                 <div className="italic text-muted-foreground">
-                  <p className="mb-4">"Code4Change opened my eyes to what I could achieve with programming. I never thought I could build my own website, but now I've created one that helps my community!"</p>
+                  <p className="mb-4">"Stories will be published in this section"</p>
                   <div className="flex items-center">
-                    <Image src="/avatars/maya.png" alt="Maya" width={40} height={40} className="rounded-full mr-3" />
-                    <div>
+                    {/* <div>
                       <p className="font-medium">Maya, 7th Grade</p>
                       <p className="text-xs text-muted-foreground">Student</p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
-                <div className="mt-6 italic text-muted-foreground">
+                {/* <div className="mt-6 italic text-muted-foreground">
                   <p className="mb-4">"As a parent, I love that this program is accessible, engaging, and encourages independent thinking. My child is more confident than ever."</p>
                   <div className="flex items-center">
                     <Image src="/avatars/parent.png" alt="Parent" width={40} height={40} className="rounded-full mr-3" />
@@ -206,7 +226,7 @@ export default function Home() {
                       <p className="text-xs text-muted-foreground">Parent of 6th Grader</p>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -219,19 +239,6 @@ export default function Home() {
             description="Your contribution helps us provide free coding education to young innovators and keep Code4Change running."
           />
         </div>
-
-        {/* Footer */}
-        <footer className="text-center mt-16 text-sm text-muted-foreground border-t pt-6 border-muted/30">
-          <p>Contact us at <a href="mailto:code4achange@gmail.com" className="underline">code4achange@gmail.com</a></p>
-          <div className="flex justify-center gap-4 mt-4">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <FaInstagram size={20} />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <FaLinkedin size={20} />
-            </a>
-          </div>
-        </footer>
       </div>
     </main>
   );
