@@ -15,7 +15,7 @@ const teamMembers = [
   {
     name: "Tulika Punia",
     role: "Founder & Lead Instructor",
-    image: "/founders/tulika-2.jpg", // Add actual image path when available
+    image: "/founders/Tulika-2.jpg", // Add actual image path when available
     bio: "Tulika Punia is a student, technologist, and STEM advocate passionate about expanding access to computer science education. She founded Code4Change to share her love for technology and create opportunities for young students to explore web development, Python, and AI at an early age. = Tulika is currently a Nexus AI Fellow, Junior Academy researcher with the New York Academy of Sciences, and Computer Science Ambassador with Code.org. She is also currently interning at the National STEM Honor Society and ThinkingBeyond, and earned awards in robotics and Model UN. A proud alum of Girls Who Code and The Coding School, Tulika continues to use technology as a tool for impact—both in her community and globally.",
     funFact: "Started coding at age 10 and built her first website for a local non-profit.",
     linkedin: "https://www.linkedin.com/in/tulikapunia/"
