@@ -8,14 +8,6 @@ import { CtaBanner } from "@/components/cta-banner"
 
 const courses = [
   {
-    title: "Web Development Basics",
-    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfaB8eGpTt96FL5AzwJIaoI60auKkSS1gapwK7jSeHl96OzKQ/viewform?usp=pp_url&entry.123456789=Web+Development+Basics",
-    description: "Discover the fun of web creation! Learn HTML, CSS, and JavaScript to design and build your own interactive websites!",
-    level: "Beginner",
-    topics: ["HTML5", "CSS3", "JavaScript Basics", "Images", "Personal Website Design"],
-    curriculum: "Exciting updates coming soon! We're working on the curriculum for Summer 2025 program. Sign up now to receive notifications and be the first to know!!"
-  },
-  {
     title: "Python for Young Innovators",
     formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSf1Qm2OLdySNf4EaU4yvi5ZrfrVUtJHNrPE3SZvAvWuncwPuQ/viewform?usp=pp_url&entry.123456789=Python+Basics",
     description: "Start your journey with Python and discover how coding can empower you to innovate and make an impact.",
@@ -76,6 +68,14 @@ const courses = [
         description: "Create your own educational demo"
       }
     ]
+  },
+  {
+    title: "Web Development Basics",
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfaB8eGpTt96FL5AzwJIaoI60auKkSS1gapwK7jSeHl96OzKQ/viewform?usp=pp_url&entry.123456789=Web+Development+Basics",
+    description: "Discover the fun of web creation! Learn HTML, CSS, and JavaScript to design and build your own interactive websites!",
+    level: "Beginner",
+    topics: ["HTML5", "CSS3", "JavaScript Basics", "Images", "Personal Website Design"],
+    curriculum: "Exciting updates coming soon! We're working on the curriculum for Summer 2025 program. Sign up now to receive notifications and be the first to know!!"
   },
   {
     title: "Code & Connect Hour",
