@@ -159,7 +159,7 @@ export default function Home() {
                   <span className="h-6 w-6 text-primary mr-2 shrink-0">✓</span>
                   <div>
                     <span className="font-medium">Tech enthusiasts</span>
-                    <p className="text-muted-foreground">Students who want to create websites, apps, or explore artificial intelligence</p>
+                    <p className="text-muted-foreground">Students who want to create websites, apps, or explore Generative AI</p>
                   </div>
                 </li>
               </ul>
@@ -304,9 +304,9 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="md:w-2/3">
-                  <h3 className="text-xl font-bold mb-2 text-purple-700 dark:text-purple-300">Artificial Intelligence</h3>
+                  <h3 className="text-xl font-bold mb-2 text-purple-700 dark:text-purple-300">Generative AI</h3>
                   <p className="text-muted-foreground mb-4">
-                    Learn the basics of machine learning through fun, interactive projects using AI applications and technologies!
+                    Learn the basics of Generative AI through fun, interactive projects using AI applications and technologies!
                   </p>
                   <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-4">
                     <span className="bg-purple-50 dark:bg-purple-900/50 px-2 py-1 rounded-md">Grades 6-8</span>

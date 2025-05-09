@@ -25,12 +25,57 @@ const courses = [
     curriculum: "Exciting updates coming soon! We're working on the curriculum for Summer 2025 program. Sign up now to receive notifications and be the first to know!!"
   },
   {
-    title: "Artificial Intelligence",
+    title: "Generative AI",
     formUrl: "https://docs.google.com/forms/d/1PD0tQD_mvleoJ4CRbL7gE3cxOlVRBS_Dbq8k8Oyh518/viewform?usp=pp_url&entry.123456789=AI+Basics",
-    description: "Learn the basics of machine learning through fun, interactive projects using AI applications and technologies!",
+    description: "Learn the basics of Generative AI through fun, interactive projects using AI applications and technologies!",
     level: "Beginner",
-    topics: ["Introduction to AI", "Machine Learning Basics", "Fun AI Projects"],
-    curriculum: "Curriculum details coming soon. Please check back later!"
+    topics: ["Generative AI Intro", "Training Data", "Neural Networks", "Fun Projects"],
+    curriculumItems: [
+      {
+        title: "Introduction to Generative AI",
+        description: "What it is and how it's changing our world"
+      },
+      {
+        title: "Input & Training Data",
+        description: "Understanding what AI models learn from"
+      },
+      {
+        title: "Bias in the Machine",
+        description: "Exploring how AI can inherit human biases"
+      },
+      {
+        title: "Understanding Embeddings",
+        description: "Learning how AI represents ideas"
+      },
+      {
+        title: "Embeddings: How They're Created",
+        description: "Turning words and concepts into numbers"
+      },
+      {
+        title: "Understanding Neural Networks",
+        description: "The building blocks of modern AI"
+      },
+      {
+        title: "Neural Networks: How They're Trained",
+        description: "Making AI learn from data"
+      },
+      {
+        title: "Attention Is All You Need",
+        description: "The breakthrough that powers ChatGPT"
+      },
+      {
+        title: "Outputs & Probabilities",
+        description: "How AI decides what to say next"
+      },
+      {
+        title: "Hallucinations and Fabrications",
+        description: "When and why AI makes things up"
+      },
+      {
+        title: "Project: Demystifying Generative AI",
+        description: "Create your own educational demo"
+      }
+    ]
   },
   {
     title: "Code & Connect Hour",
@@ -106,9 +151,19 @@ export default function CoursesPage() {
                     View Curriculum
                   </summary>
                   <div className="mt-4 p-5 bg-blue-50/50 dark:bg-blue-900/10 rounded-lg border border-blue-100 dark:border-blue-900/20">
-                    <p className="text-gray-600 dark:text-gray-400 italic">
-                      {course.curriculum}
-                    </p>
+                    {course.curriculumItems ? (
+                      <ol className="list-decimal pl-5 space-y-2">
+                        {course.curriculumItems.map((item, index) => (
+                          <li key={index}>
+                            <strong>{item.title}:</strong> {item.description}
+                          </li>
+                        ))}
+                      </ol>
+                    ) : (
+                      <p className="text-gray-600 dark:text-gray-400 italic">
+                        {course.curriculum}
+                      </p>
+                    )}
                   </div>
                 </details>
               </div>

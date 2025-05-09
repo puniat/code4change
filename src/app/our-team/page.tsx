@@ -43,7 +43,7 @@ const volunteers = [
   },
   {
     name: "Position Open",
-    role: "Artificial Intelligence Mentor",
+    role: "Generative AI Mentor",
     bio: "AI enthusiast with a knack for explaining complex concepts in simple terms, eager to guide students through the world of AI.",
   }
 ]

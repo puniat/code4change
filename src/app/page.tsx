@@ -88,7 +88,7 @@ export default function Home() {
                 title: 'Web Development Basics',
                 desc: 'Learn HTML, CSS, and JavaScript to design and build your own interactive websites.',
                 age: 'Grades 4–6',
-                duration: '6–10 weeks',
+                //duration: '6–10 weeks',
                 href: '/courses?course=web-dev',
                 color: 'blue'
               },
@@ -97,16 +97,16 @@ export default function Home() {
                 title: 'Python for Young Innovators',
                 desc: 'Explore Python from the ground up — no experience needed, just curiosity and creativity!',
                 age: 'Grades 5–8',
-                duration: '6–10 weeks',
+                //duration: '6–10 weeks',
                 href: '/courses?course=python',
                 color: 'green'
               },
               {
                 icon: '🤖',
-                title: 'Artificial Intelligence',
-                desc: 'Explore machine learning and AI concepts through fun and creative projects.',
+                title: 'Generative AI',
+                desc: 'Explore Generative AI and its concepts through fun and creative projects.',
                 age: 'Grades 6–8',
-                duration: '6–10 weeks',
+                //duration: '6–10 weeks',
                 href: '/courses?course=ai-basics',
                 color: 'purple'
               },
@@ -115,7 +115,7 @@ export default function Home() {
                 title: 'Code & Connect Hour',
                 desc: 'One-hour weekly coding jams — perfect for busy schedules and curious minds.',
                 age: 'Grades 4–8',
-                duration: '1 hour per session',
+                //duration: '1 hour per session',
                 href: '/courses?course=code-connect',
                 color: 'amber'  // Changed from 'indigo' to 'amber'
               }
@@ -129,7 +129,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="text-sm text-muted-foreground mb-4">
-                  <span>{course.age}</span> • <span>{course.duration}</span>
+                  {/* <span>{course.age}</span> • <span>{course.duration}</span> */}
+                  <span>{course.age}</span>
                 </div>
                 <Link href={course.href}>
                   <Button className={getButtonClass(course.color)}>Register Now</Button>
